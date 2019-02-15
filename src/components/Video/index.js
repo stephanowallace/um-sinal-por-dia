@@ -1,12 +1,12 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import './style.css';
+import styles from './style.css';
 
 const Video = ({ className, url }) => {
     return (
         <video
             autoPlay
-            className={`video ${className}`}
+            className={`${styles.video} ${className}`}
             key={url}
             loop="loop"
             muted
